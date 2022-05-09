@@ -8,15 +8,15 @@ const resolvers = {
     // get a single track by ID, for the track page
     track: (_, { id }, { dataSources }) => {
       
-        durationInSeconds: ({ length }) => length
+        durationInSeconds: ({ durationInSeconds }) => durationInSeconds
    
       return dataSources.trackAPI.getTrack(id);
     },
 
     // get a single module by ID, for the module detail page
     module: (_, { id }, { dataSources }) => {
-    
-        durationInSeconds: ({ length }) => length
+      durationInSeconds: ({ durationInSeconds }) => durationInSeconds
+ 
 
       return dataSources.trackAPI.getModule(id);
     },
