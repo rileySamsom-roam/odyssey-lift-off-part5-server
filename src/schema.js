@@ -44,7 +44,7 @@ const typeDefs = gql`
     "The track's complete array of Modules"
     modules: [Module!]!
     "The track's full duration, in seconds"
-durationInSeconds: Int
+    Length: Int
   }
 
   "Author of a complete Track or a Module"
@@ -66,7 +66,7 @@ durationInSeconds: Int
     "The module's video url, for video-based modules"
     videoUrl: String
     "The module's video duration, in seconds"
-durationInSeconds: Int
+    Length: Int
   }
 `;
 
